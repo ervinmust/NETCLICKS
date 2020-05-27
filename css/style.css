@@ -1195,3 +1195,7 @@ div:after {
         background-color: #00838f;
     }
 }
+
+.not_found {
+    width: auto !important;
+}

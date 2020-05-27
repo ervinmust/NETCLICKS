@@ -71,6 +71,10 @@ const renderCards = res => {
         showsList.append(card);
     });
 
+    if (!res.results.length) {
+        showsList.innerHTML = `<div><h3 style="text-align: center">Ничего не найдено...</h3><br/><img src="img/not_found.jpg" class="not_found" alt="" /></div>`;
+    }
+
     loading.remove();
 }
 
